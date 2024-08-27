@@ -1,0 +1,38 @@
+.single-service {
+    text-align: center;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 30px 20px;
+    position: relative;
+    &:hover{
+        &:before, &:after{
+            width: 100%;
+        }
+    }
+    &:before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 5px;
+        background-color: tomato;
+        left: 0;
+        top: -3px;
+        transition: .5s;
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 5px;
+        background-color: tomato;
+        right: 0;
+        bottom: -3px;
+        transition: .5s;
+    }
+    img {
+        width: 50px;
+    }
+    h4 {
+        margin: 15px 0;
+    }
+}

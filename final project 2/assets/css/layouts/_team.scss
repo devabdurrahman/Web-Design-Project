@@ -1,0 +1,39 @@
+.team-area{
+    background-color: $bg_gray;
+    .single-team {
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            .team-content {
+                bottom: 0;
+            }
+        }
+        img {
+            width: 100%;
+            border: 1px solid $white;
+            padding: 3px;
+        }
+        .team-content {
+            background-color: $black;
+            position: absolute;
+            bottom: -96px;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            color: $white;
+            transition: .3s;
+            h4 {
+                text-transform: capitalize;
+                font-size: 22px;
+                span {
+                    display: block;
+                    font-size: 16px;
+                    text-transform: lowercase;
+                    font-weight: 400;
+                }
+            }
+        }
+        
+    }
+}

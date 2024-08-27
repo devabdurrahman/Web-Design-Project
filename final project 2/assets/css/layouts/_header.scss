@@ -1,0 +1,32 @@
+.header-area {
+    padding: 20px 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    .container{
+        .row{
+            div{
+                flex: 1;
+            }
+        }
+        .menu{
+            ul{
+                li{
+                    a{
+                        display: block;
+                        margin-left: 20px;
+                        text-transform: capitalize;
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: $white;
+                        &:hover {
+                            color: $primary_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

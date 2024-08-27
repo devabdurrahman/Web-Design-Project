@@ -1,0 +1,27 @@
+section.breadcrumb-area.bg {
+    padding: 150px 0 50px;
+    h4 {
+        text-transform: capitalize;
+        color: white;
+        font-size: 40px;
+    }
+    ul {
+        display: flex;
+        margin-top: 10px;
+        li{
+            color: $white;
+            text-transform: capitalize;
+            margin-left: 5px;
+            a{
+                color: $white;
+                text-transform: capitalize;
+                margin-right: 5px;
+                transition: .3s;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    
+}

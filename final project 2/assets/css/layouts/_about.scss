@@ -1,0 +1,42 @@
+.about-area{
+    .about-content{
+        p{
+            margin-bottom: 30px;
+        }
+    }
+    .about-gallery{
+        position: relative;
+        @include min-lg{
+            margin-top: 60px;
+        }
+        img {
+            border: 1px solid $gray;
+            &:nth-child(1) {
+                max-width: 450px;
+            }
+            &:nth-child(2) {
+                position: absolute;
+                right: 80px;
+                bottom: -80px;
+                max-width: 370px;
+                @include min-xl{
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+.about-page-image{
+    img {
+        border: 1px solid $gray;
+        padding: 3px;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+.about-page-content{
+    p {
+        margin-bottom: 20px;
+    }
+} 
